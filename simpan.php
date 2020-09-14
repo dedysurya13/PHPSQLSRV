@@ -14,7 +14,7 @@ $kodebarang = $_POST['kodeBarang'];
 $namabarang = $_POST['namaBarang'];
 $satuan     = $_POST['satuan'];
 
-$tsql = "Insert into barang values('$kodeBarang','$namaBarang','$satuan')";
+$tsql = "Insert into barang values('$kodebarang','$namabarang','$satuan')";
 $stmt = sqlsrv_query( $conn, $tsql);
 
 if( $stmt === false ) {

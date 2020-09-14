@@ -38,13 +38,13 @@
                                 while($row = sqlsrv_fetch_array($stmt, sqlsrv_fetch_assoc)){
                                     ?>
                                     <tr>
-                                        <td><?= $row['kodeBarang'];?></td>
-                                        <td><?= $row['namaBarang'];?></td>
+                                        <td><?= $row['kodebarang'];?></td>
+                                        <td><?= $row['namabarang'];?></td>
                                         <td><?= $row['satuan'];?></td>
                                         <td>
-                                            <a href="" class="badge badge-primary badge-pill tampilModalUbah" data-toggle="modal" data-target="#exampleModal" data-id="<?= $row['kodeBarang'];?>" data-zurl="">Edit</a>
+                                            <a href="" class="badge badge-primary badge-pill tampilModalUbah" data-toggle="modal" data-target="#exampleModal" data-id="<?= $row['kodebarang'];?>" data-zurl="">Edit</a>
 
-                                            <a href="hapus.php?kodebarang=<?= $row['kodeBarang'];?>" class="badge badge-primary badge-pill" onclick="return confirm('Hapus data?');">Hapus</a>
+                                            <a href="hapus.php?kodebarang=<?= $row['kodebarang'];?>" class="badge badge-primary badge-pill" onclick="return confirm('Hapus data?');">Hapus</a>
                                         </td>
                                     </tr>
                                     <?php

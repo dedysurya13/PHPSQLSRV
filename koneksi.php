@@ -11,4 +11,6 @@
     }else{
         echo "Koneksi gagal";
     }*/
+    if ( !defined( 'SQLSRV_FETCH_ASSOC' ) )
+        define( 'SQLSRV_FETCH_ASSOC', 2 );
 ?>
